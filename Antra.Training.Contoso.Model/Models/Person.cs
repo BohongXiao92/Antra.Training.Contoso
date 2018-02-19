@@ -22,7 +22,7 @@ namespace Antra.Training.Contoso.Model
         [MaxLength(150)]
         public string FirstName { get; set; }
 
-        [Display(Name = "First Name")]
+        [Display(Name = "Middle Name")]
         [MaxLength(150)]
         [StringLength(50, ErrorMessage = "First name cannot be longer than 50 characters.")]
         public string MiddleName { get; set; }

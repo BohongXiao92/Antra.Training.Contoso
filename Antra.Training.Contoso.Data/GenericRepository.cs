@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
@@ -61,6 +62,21 @@ namespace Antra.Training.Contoso.Data
             return _dbSet.Where(where).ToList();
         }
 
+
+        public virtual IEnumerable<T> AllInclude(params Expression<Func<T, object>>[] includeProperties)
+        {
+            return GetAllIncluding(includeProperties).ToList();
+        }
+
+        public virtual IEnumerable<T> FindByInclude(Expression<Func<T, bool>> predicate,
+            params Expression<Func<T, object>>[] includeProperties)
+        {
+            var query = GetAllIncluding(includeProperties);
+            IEnumerable<T> results = query.Where(predicate).ToList();
+            return results;
+        }
+
+
         public IQueryable<T> GetQueryable()
         {
             return _dbSet.AsQueryable();
@@ -69,6 +85,59 @@ namespace Antra.Training.Contoso.Data
         public void SaveChanges()
         {
             _context.SaveChanges();
+        }
+
+        public IEnumerable<T> GetPagedList(out int totalCount, int? page = null, int? pageSize = null,Expression<Func<T, bool>> filter = null, string[] includePaths = null, params SortExpression<T>[] sortExpressions)
+        {
+            IQueryable<T> query = _dbSet;
+            if (filter != null)
+                query = _dbSet.Where(filter);
+
+            totalCount = query.Count();
+
+            if (includePaths != null)
+                for (var i = 0; i < includePaths.Count(); i++)
+                    query = query.Include(includePaths[i]);
+
+            if (sortExpressions != null)
+            {
+                IOrderedQueryable<T> orderedQuery = null;
+                for (var i = 0; i < sortExpressions.Count(); i++)
+                    if (i == 0)
+                    {
+                        if (sortExpressions[i].SortDirection == ListSortDirection.Ascending)
+                            orderedQuery = query.OrderBy(sortExpressions[i].SortBy);
+                        else
+                            orderedQuery = query.OrderByDescending(sortExpressions[i].SortBy);
+                    }
+                    else
+                    {
+                        if (sortExpressions[i].SortDirection == ListSortDirection.Ascending)
+                            orderedQuery = orderedQuery.ThenBy(sortExpressions[i].SortBy);
+                        else
+                            orderedQuery = orderedQuery.ThenByDescending(sortExpressions[i].SortBy);
+                    }
+
+                if (page != null)
+                    query = orderedQuery.Skip(((int)page - 1) * (int)pageSize);
+            }
+
+
+            if (pageSize != null)
+                query = query.Take((int)pageSize);
+
+            return query.ToList();
+        }
+
+        public IEnumerable<U> GetBy<U>(Expression<Func<T, U>> columns, Expression<Func<T, bool>> where)
+        {
+            return _dbSet.Where(where).Select(columns);
+        }
+
+        private IQueryable<T> GetAllIncluding(params Expression<Func<T, object>>[] includeProperties)
+        {
+            var queryable = _dbSet.AsNoTracking();
+            return includeProperties.Aggregate(queryable, (current, property) => current.Include(property));
         }
     }
 }

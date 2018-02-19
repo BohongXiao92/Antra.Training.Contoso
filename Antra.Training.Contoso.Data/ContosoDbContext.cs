@@ -9,7 +9,7 @@ namespace Antra.Training.Contoso.Data
 {
     public class ContosoDbContext : DbContext
     {
-        public ContosoDbContext() : base("Name = ContosoDbContext")
+        public ContosoDbContext() : base("Name=ContosoDbContext")
         { }
 
         public DbSet<Person> Persons { get; set; }
@@ -23,9 +23,8 @@ namespace Antra.Training.Contoso.Data
         public override int SaveChanges()
         {
             var modifiedEntries = ChangeTracker.Entries()
-                                  .Where(x => x.Entity is IAuditableEntity
-                                  &&
-                                  (x.State == System.Data.Entity.EntityState.Added || x.State == System.Data.Entity.EntityState.Modified));
+                                               .Where(x => x.Entity is IAuditableEntity
+                                               && (x.State == System.Data.Entity.EntityState.Added || x.State == System.Data.Entity.EntityState.Modified));
 
             foreach (var entry in modifiedEntries)
             {

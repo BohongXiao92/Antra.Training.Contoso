@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Antra.Training.Contoso.Data.Repositories
 {
-    class StudentRepository : GenericRepository<Student>, IStudentRepository
+    public class StudentRepository : GenericRepository<Student>, IStudentRepository
     {
         public StudentRepository(ContosoDbContext context) : base(context)
         {}

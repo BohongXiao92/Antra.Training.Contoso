@@ -4,3 +4,10 @@ C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Trai
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\obj\Debug\Antra.Training.Contoso.Service.csproj.CoreCompileInputs.cache
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\obj\Debug\Antra.Training.Contoso.Service.dll
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\obj\Debug\Antra.Training.Contoso.Service.pdb
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\bin\Debug\Antra.Training.Contoso.Data.dll
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\bin\Debug\Antra.Training.Contoso.Model.dll
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\bin\Debug\EntityFramework.dll
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\bin\Debug\Antra.Training.Contoso.Data.pdb
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\bin\Debug\Antra.Training.Contoso.Data.dll.config
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\bin\Debug\Antra.Training.Contoso.Model.pdb
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Service\bin\Debug\EntityFramework.xml

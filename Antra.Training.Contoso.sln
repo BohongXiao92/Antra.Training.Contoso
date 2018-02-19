@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.Training.Contoso.Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.Training.Contoso.Utility", "Antra.Training.Contoso.Utility\Antra.Training.Contoso.Utility.csproj", "{1CD5D426-355B-4B34-AE17-6A0364F3E1C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{E6202861-A123-4A10-A53C-30CF123C34EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1CD5D426-355B-4B34-AE17-6A0364F3E1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CD5D426-355B-4B34-AE17-6A0364F3E1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CD5D426-355B-4B34-AE17-6A0364F3E1C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6202861-A123-4A10-A53C-30CF123C34EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6202861-A123-4A10-A53C-30CF123C34EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6202861-A123-4A10-A53C-30CF123C34EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6202861-A123-4A10-A53C-30CF123C34EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
