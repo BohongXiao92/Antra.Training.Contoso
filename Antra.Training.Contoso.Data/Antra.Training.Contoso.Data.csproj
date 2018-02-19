@@ -82,8 +82,18 @@
     <Compile Include="Migrations\201802190023394_generateDepartments.Designer.cs">
       <DependentUpon>201802190023394_generateDepartments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802191349452_Try.cs" />
+    <Compile Include="Migrations\201802191349452_Try.Designer.cs">
+      <DependentUpon>201802191349452_Try.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CourseRepository.cs" />
+    <Compile Include="Repositories\DepartmentRepository.cs" />
+    <Compile Include="Repositories\InstructorRepository.cs" />
+    <Compile Include="Repositories\PersonRepository.cs" />
+    <Compile Include="Repositories\RoleRepository.cs" />
+    <Compile Include="Repositories\StudentRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Antra.Training.Contoso.Model\Antra.Training.Contoso.Model.csproj">
@@ -120,9 +130,10 @@
     <EmbeddedResource Include="Migrations\201802190023394_generateDepartments.resx">
       <DependentUpon>201802190023394_generateDepartments.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802191349452_Try.resx">
+      <DependentUpon>201802191349452_Try.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

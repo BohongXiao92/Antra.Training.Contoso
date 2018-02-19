@@ -20,3 +20,4 @@ C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Trai
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.generateEnrollmentAndRelations.resources
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.generateOfficeAssignments.resources
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.generateDepartments.resources
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.Try.resources
