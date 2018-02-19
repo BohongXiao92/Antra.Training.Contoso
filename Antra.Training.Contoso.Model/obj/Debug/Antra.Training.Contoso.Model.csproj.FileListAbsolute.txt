@@ -1,0 +1,6 @@
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Model\bin\Debug\Antra.Training.Contoso.Model.dll
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Model\bin\Debug\Antra.Training.Contoso.Model.pdb
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Model\obj\Debug\Antra.Training.Contoso.Model.csprojResolveAssemblyReference.cache
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Model\obj\Debug\Antra.Training.Contoso.Model.csproj.CoreCompileInputs.cache
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Model\obj\Debug\Antra.Training.Contoso.Model.dll
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Model\obj\Debug\Antra.Training.Contoso.Model.pdb

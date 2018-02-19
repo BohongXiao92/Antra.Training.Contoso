@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.Training.ContosoApp", "Antra.Training.ContosoApp\Antra.Training.ContosoApp.csproj", "{16547264-94BB-4EC7-827D-9DA441318DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.Training.ContosoApp.Tests", "Antra.Training.ContosoApp.Tests\Antra.Training.ContosoApp.Tests.csproj", "{F97AF301-4DC3-4C9D-ACB2-7538BFD779F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.Training.Contoso.Data", "Antra.Training.Contoso.Data\Antra.Training.Contoso.Data.csproj", "{9FB37F6C-1DF3-48DC-AEC0-46D0CE6FF698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.Training.Contoso.Model", "Antra.Training.Contoso.Model\Antra.Training.Contoso.Model.csproj", "{1B3A624C-1487-4129-AA08-41CEDEA3FAC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.Training.Contoso.Service", "Antra.Training.Contoso.Service\Antra.Training.Contoso.Service.csproj", "{C5019000-B5C5-416A-A761-E3AC98CCBE09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.Training.Contoso.Utility", "Antra.Training.Contoso.Utility\Antra.Training.Contoso.Utility.csproj", "{1CD5D426-355B-4B34-AE17-6A0364F3E1C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16547264-94BB-4EC7-827D-9DA441318DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16547264-94BB-4EC7-827D-9DA441318DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16547264-94BB-4EC7-827D-9DA441318DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16547264-94BB-4EC7-827D-9DA441318DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97AF301-4DC3-4C9D-ACB2-7538BFD779F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97AF301-4DC3-4C9D-ACB2-7538BFD779F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97AF301-4DC3-4C9D-ACB2-7538BFD779F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97AF301-4DC3-4C9D-ACB2-7538BFD779F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB37F6C-1DF3-48DC-AEC0-46D0CE6FF698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB37F6C-1DF3-48DC-AEC0-46D0CE6FF698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB37F6C-1DF3-48DC-AEC0-46D0CE6FF698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB37F6C-1DF3-48DC-AEC0-46D0CE6FF698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3A624C-1487-4129-AA08-41CEDEA3FAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3A624C-1487-4129-AA08-41CEDEA3FAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3A624C-1487-4129-AA08-41CEDEA3FAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3A624C-1487-4129-AA08-41CEDEA3FAC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5019000-B5C5-416A-A761-E3AC98CCBE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5019000-B5C5-416A-A761-E3AC98CCBE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5019000-B5C5-416A-A761-E3AC98CCBE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5019000-B5C5-416A-A761-E3AC98CCBE09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD5D426-355B-4B34-AE17-6A0364F3E1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD5D426-355B-4B34-AE17-6A0364F3E1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD5D426-355B-4B34-AE17-6A0364F3E1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD5D426-355B-4B34-AE17-6A0364F3E1C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4472E31-2FD1-4CEB-B80B-B3DEE80A6900}
+	EndGlobalSection
+EndGlobal
