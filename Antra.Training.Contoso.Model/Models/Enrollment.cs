@@ -11,7 +11,7 @@ namespace Antra.Training.Contoso.Model
         public Grade? Grade { get; set; }
 
         public Course Course { get; set; }
-        public Student Student { get; set; }
+        public Instructor Student { get; set; }
     }
 
     public enum Grade

@@ -16,35 +16,37 @@ namespace Test
         {
             using (var db = new ContosoDbContext())
             {
-                Person p1 = new Student()
+
+                Instructor sUpdate = new Instructor()
                 {
-                    FirstName = "Bohong",
-                    LastName = "Xiao"
+                    Id = 14,
+                    FirstName = "Shangxiang",
+                    LastName = "Sun",
+                    DateofBirth = DateTime.Now,
+                    Email = "Shangxiang@gmail.com",
+                    Password = "ssa21345dfas",
+                    EnrollmentDate = DateTime.Now
                 };
 
-                Department d1 = new Department()
-                {
-                    Name = "D1",
-                    Budget = 15000,
-                    StartDate = DateTime.Now
-                };
-
-                DepartmentRepository dp = new DepartmentRepository(db);
-                dp.Add(d1);
-
+                StudentRepository sr = new StudentRepository(db);
+                PersonRepository pr = new PersonRepository(db);
+                StudentService ss = new StudentService(pr, sr);
+                //sr.Add(sUpdate);
+                //sr.Update(sUpdate);
                 
+
                 try
                 {
-                    db.SaveChanges();
+                    //ss.CreateStudent(sUpdate);
+                    ss.UpdateStudent(sUpdate);
+                    Console.WriteLine("Yeah!!!!!!!!!!!!!!!!!!!!!");
+
                 }
                 catch (Exception e)
                 {
-
                     Console.Write(e.ToString());
-                    Console.Read();
                 }
-                
-
+                Console.ReadLine();
             }
         }
     }

@@ -30,7 +30,6 @@ namespace Antra.Training.Contoso.Service
 
         public List<Person> GetPeopleByRole(int roleId)
         {
-            // TODO ... 
             throw new NotImplementedException();
         }
     }

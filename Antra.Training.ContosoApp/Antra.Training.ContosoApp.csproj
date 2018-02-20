@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -143,6 +149,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -187,6 +194,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Department\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -208,7 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Antra.Training.Contoso.Data\Antra.Training.Contoso.Data.csproj">
-      <Project>{9fb37f6c-1df3-48dc-aec0-46d0ce6ff698}</Project>
+      <Project>{9FB37F6C-1DF3-48DC-AEC0-46D0CE6FF698}</Project>
       <Name>Antra.Training.Contoso.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Antra.Training.Contoso.Model\Antra.Training.Contoso.Model.csproj">
@@ -218,10 +226,6 @@
     <ProjectReference Include="..\Antra.Training.Contoso.Service\Antra.Training.Contoso.Service.csproj">
       <Project>{c5019000-b5c5-416a-a761-e3ac98ccbe09}</Project>
       <Name>Antra.Training.Contoso.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Antra.Training.Contoso.Utility\Antra.Training.Contoso.Utility.csproj">
-      <Project>{1cd5d426-355b-4b34-ae17-6a0364f3e1c5}</Project>
-      <Name>Antra.Training.Contoso.Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

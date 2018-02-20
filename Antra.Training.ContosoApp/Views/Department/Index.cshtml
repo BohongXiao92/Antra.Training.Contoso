@@ -1,0 +1,24 @@
+﻿@model IList<Antra.Training.Contoso.Model.Department>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <td> Department Id </td>
+        <td> Name </td>
+        <td> Budget </td>
+    </tr>
+    @foreach (var dep in Model)
+    {
+        <tr>
+            <td> @dep.Id </td>
+            <td> @dep.Name </td>
+            <td> @dep.Budget </td>
+        </tr>
+    }
+</table>
+

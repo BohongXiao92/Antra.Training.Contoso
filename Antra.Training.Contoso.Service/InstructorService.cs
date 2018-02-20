@@ -1,45 +1,53 @@
 ﻿using Antra.Training.Contoso.Data.Repositories;
 using Antra.Training.Contoso.Model;
+using Antra.Training.Contoso.Model.Common;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Transactions;
 
 namespace Antra.Training.Contoso.Service
 {
     public class InstructorService : IInstructorService
     {
         private readonly IInstructorRepository _instructorRepository;
-        public InstructorService(IInstructorRepository instructorRepository)
-        {
-            _instructorRepository = instructorRepository;
-        }
+        public InstructorService(IInstructorRepository instructorRepository) => _instructorRepository = instructorRepository;
         public IEnumerable<Instructor> GetAllInstructors(int? page, int pageSize, out int totalCount)
         {
-            throw new NotImplementedException();
+            var instructors = _instructorRepository.GetPagedList(out totalCount, page, pageSize, null, null, new SortExpression<Instructor>(s => s.FirstName, ListSortDirection.Ascending)).ToList();
+            return instructors;
         }
-
         public Instructor GetInstructorById(int id)
         {
-            throw new NotImplementedException();
+            return _instructorRepository.GetById(id);
         }
-
         public IEnumerable<Instructor> GetInstructorByName(string name)
         {
-            throw new NotImplementedException();
+            return _instructorRepository.GetMany(s => s.LastName.Contains(name) || s.FirstName.Contains(name)).ToList();
         }
-
+        // TODO ...
         public Instructor GetInstructorByCode(string employeeCode)
         {
             throw new NotImplementedException();
         }
-
         public void CreateInstructor(Instructor instructor)
         {
-            _instructorRepository.Add(instructor);
+            using (var transaction = new TransactionScope())
+            {
+                _instructorRepository.Add(instructor);
+                _instructorRepository.SaveChanges();
+                transaction.Complete();
+            }
         }
-
         public void UpdateInstructor(Instructor instructor)
         {
-            throw new NotImplementedException();
+            using (var transaction = new TransactionScope())
+            {
+                _instructorRepository.Update(instructor);
+                _instructorRepository.SaveChanges();
+                transaction.Complete();
+            }
         }
     }
 

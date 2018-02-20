@@ -11,10 +11,7 @@ namespace Antra.Training.Contoso.Service
 
         private readonly IRoleRepository _roleRepository;
 
-        public RoleService(IRoleRepository roleRepository)
-        {
-            _roleRepository = roleRepository;
-        }
+        public RoleService(IRoleRepository roleRepository) => _roleRepository = roleRepository;
 
         public List<Role> GetAllRoles()
         {

@@ -1,8 +1,9 @@
-﻿using Antra.Training.Contoso.Data;
-using Antra.Training.Contoso.Data.Repositories;
+﻿using Antra.Training.Contoso.Data.Repositories;
 using Antra.Training.Contoso.Model;
+using Antra.Training.Contoso.Model.Common;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Transactions;
 
@@ -12,35 +13,31 @@ namespace Antra.Training.Contoso.Service
     {
         private readonly IPersonRepository _personRepository;
         private readonly IStudentRepository _studentRepository;
-
         public StudentService(IPersonRepository personRepository, IStudentRepository studentRepository)
         {
             _studentRepository = studentRepository;
             _personRepository = personRepository;
         }
-
-        public IEnumerable<Student> GetAllStudents()
+        public IEnumerable<Instructor> GetAllStudents(int? page, int pageSize, out int totalCount)
         {
-            var students = _studentRepository.GetAll().ToList();
+            var students = _studentRepository.GetPagedList(out totalCount, page, pageSize, null, null,
+                new SortExpression<Instructor>(s => s.FirstName, ListSortDirection.Ascending));
             return students;
         }
-
-        public Student GetStudentById(int id)
+        public Instructor GetStudentById(int id)
         {
             return _studentRepository.GetById(id);
         }
-
-        public IEnumerable<Student> GetStudentByName(string name)
+        public IEnumerable<Instructor> GetStudentByName(string name)
         {
             return _studentRepository.GetMany(s => s.LastName.Contains(name) || s.FirstName.Contains(name)).ToList();
         }
-
-        public Student GetStudentByCode(string employeeCode)
+        // TODO ...
+        public Instructor GetStudentByCode(string employeeCode)
         {
             throw new NotImplementedException();
         }
-
-        public void CreateStudent(Student student)
+        public void CreateStudent(Instructor student)
         {
             using (var transaction = new TransactionScope())
             {
@@ -49,21 +46,24 @@ namespace Antra.Training.Contoso.Service
                 transaction.Complete();
             }
         }
-
-        public void UpdateStudent(Student student)
+        public void UpdateStudent(Instructor student)
         {
-            throw new NotImplementedException();
+            using (var transaction = new TransactionScope())
+            {
+                _personRepository.Update(student);
+                _personRepository.SaveChanges();
+                transaction.Complete();
+            }
         }
-
     }
 
     public interface IStudentService
     {
-        IEnumerable<Student> GetAllStudents();
-        Student GetStudentById(int id);
-        IEnumerable<Student> GetStudentByName(string name);
-        Student GetStudentByCode(string employeeCode);
-        void CreateStudent(Student student);
-        void UpdateStudent(Student student);
+        IEnumerable<Instructor> GetAllStudents(int? page, int pageSize, out int totalCount);
+        Instructor GetStudentById(int id);
+        IEnumerable<Instructor> GetStudentByName(string name);
+        Instructor GetStudentByCode(string employeeCode);
+        void CreateStudent(Instructor student);
+        void UpdateStudent(Instructor student);
     }
 }

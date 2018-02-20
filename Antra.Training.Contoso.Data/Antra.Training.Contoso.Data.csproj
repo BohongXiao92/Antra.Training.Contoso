@@ -94,6 +94,14 @@
     <Compile Include="Migrations\201802191715533_SomeChangesInAuditable.Designer.cs">
       <DependentUpon>201802191715533_SomeChangesInAuditable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802192326322_NullableEnrollmentDate.cs" />
+    <Compile Include="Migrations\201802192326322_NullableEnrollmentDate.Designer.cs">
+      <DependentUpon>201802192326322_NullableEnrollmentDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802200126103_IwantToInsertNewData.cs" />
+    <Compile Include="Migrations\201802200126103_IwantToInsertNewData.Designer.cs">
+      <DependentUpon>201802200126103_IwantToInsertNewData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CourseRepository.cs" />
@@ -146,6 +154,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802191715533_SomeChangesInAuditable.resx">
       <DependentUpon>201802191715533_SomeChangesInAuditable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802192326322_NullableEnrollmentDate.resx">
+      <DependentUpon>201802192326322_NullableEnrollmentDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802200126103_IwantToInsertNewData.resx">
+      <DependentUpon>201802200126103_IwantToInsertNewData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

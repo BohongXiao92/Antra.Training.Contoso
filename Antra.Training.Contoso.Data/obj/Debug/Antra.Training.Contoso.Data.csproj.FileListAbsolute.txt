@@ -8,11 +8,7 @@ C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Trai
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\bin\Debug\EntityFramework.xml
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.csprojResolveAssemblyReference.cache
-C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.csproj.CoreCompileInputs.cache
-C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.dll
-C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.pdb
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.initialmigrationStudentAndRole.resources
-C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.csproj.GenerateResource.Cache
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.addManyToManyPersonToRoles.resources
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.generateInstructor.resources
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.generateCoursesAndBindWithInstructor.resources
@@ -23,3 +19,9 @@ C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Trai
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.Try.resources
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.TryInstancePersonTable.resources
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.SomeChangesInAuditable.resources
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.csproj.GenerateResource.Cache
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.csproj.CoreCompileInputs.cache
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.dll
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.pdb
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.NullableEnrollmentDate.resources
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.Contoso.Data\obj\Debug\Antra.Training.Contoso.Data.Migrations.IwantToInsertNewData.resources

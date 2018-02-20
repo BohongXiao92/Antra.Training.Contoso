@@ -6,7 +6,6 @@ C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Trai
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Antra.Training.Contoso.Data.dll
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Antra.Training.Contoso.Model.dll
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Antra.Training.Contoso.Service.dll
-C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Antra.Training.Contoso.Utility.dll
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -30,7 +29,6 @@ C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Trai
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Antra.Training.Contoso.Data.dll.config
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Antra.Training.Contoso.Model.pdb
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Antra.Training.Contoso.Service.pdb
-C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Antra.Training.Contoso.Utility.pdb
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\System.Web.Helpers.xml
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\System.Web.Mvc.xml
@@ -51,3 +49,5 @@ C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Trai
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\obj\Debug\Antra.Training.ContosoApp.csproj.CoreCompileInputs.cache
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\obj\Debug\Antra.Training.ContosoApp.dll
 C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\obj\Debug\Antra.Training.ContosoApp.pdb
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\EntityFramework.SqlServer.dll
+C:\Users\bx334\Desktop\AntraCourse\MVC Project\Antra.Training.Contoso\Antra.Training.ContosoApp\bin\EntityFramework.SqlServer.xml
