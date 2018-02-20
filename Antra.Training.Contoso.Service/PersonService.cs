@@ -8,26 +8,22 @@ namespace Antra.Training.Contoso.Service
     public class PersonService : IPersonService
     {
         private readonly IPersonRepository _personRepository;
-
         public PersonService(IPersonRepository personRepository) => _personRepository = personRepository;
-
         public Person GetPersonByUserName(string username)
         {
             var person = _personRepository.Get(p => p.Email == username);
             return person;
         }
-
         public Person GetValidPerson(string username, string password)
         {
             var person = _personRepository.Get(p => p.Email == username && p.Password == password);
             return person;
         }
-
         public void AddPerson(Person person)
         {
             _personRepository.Add(person);
         }
-
+        //TODO ... Get People By Role
         public List<Person> GetPeopleByRole(int roleId)
         {
             throw new NotImplementedException();

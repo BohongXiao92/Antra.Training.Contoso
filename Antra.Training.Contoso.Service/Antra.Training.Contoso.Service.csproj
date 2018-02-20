@@ -51,6 +51,7 @@
     <Compile Include="DepartmentService.cs" />
     <Compile Include="EnrollmentService.cs" />
     <Compile Include="InstructorService.cs" />
+    <Compile Include="OfficeAssignmentService.cs" />
     <Compile Include="PersonService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleService.cs" />

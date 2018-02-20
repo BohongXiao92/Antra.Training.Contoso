@@ -44,14 +44,17 @@ namespace Test
                 //    HireDate = DateTime.Now
                 //};
 
-                RoleRepository rr = new RoleRepository(db);
-                RoleService rs = new RoleService(rr);
+                //RoleRepository rr = new RoleRepository(db);
+                //RoleService rs = new RoleService(rr);
+                //Role role = new Role()
+                //{
+                //    Id = 3,
+                //    RoleName = "Soso",
+                //    Description = "This person is just so so"
+                //};
 
-                Role role = new Role()
-                {
-                    RoleName = "Good",
-                    Description = "This person is good"
-                };
+
+                
 
                 try
                 {
@@ -59,7 +62,8 @@ namespace Test
                     //ss.UpdateStudent(sUpdate);
                     //insS.CreateInstructor(ins);
                     //insS.UpdateInstructor(ins);
-                    rs.CreateRole(role);
+                    //rs.CreateRole(role);
+                    //rs.UpdateRole(role);
                     Console.WriteLine("Yeah!!!!!!!!!!!!!!!!!!!!!");
 
                 }

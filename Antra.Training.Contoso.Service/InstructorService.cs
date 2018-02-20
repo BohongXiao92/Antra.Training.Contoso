@@ -26,7 +26,7 @@ namespace Antra.Training.Contoso.Service
         {
             return _instructorRepository.GetMany(s => s.LastName.Contains(name) || s.FirstName.Contains(name)).ToList();
         }
-        // TODO ...
+        // TODO ... Get Instructor By Code
         public Instructor GetInstructorByCode(string employeeCode)
         {
             throw new NotImplementedException();
