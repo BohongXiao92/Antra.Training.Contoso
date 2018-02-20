@@ -11,8 +11,11 @@ namespace Antra.Training.Contoso.Service
 {
     public class InstructorService : IInstructorService
     {
+
+        /*************** Constructor ****************/
         private readonly IInstructorRepository _instructorRepository;
         public InstructorService(IInstructorRepository instructorRepository) => _instructorRepository = instructorRepository;
+        /*************** Methods ****************/
         public IEnumerable<Instructor> GetAllInstructors(int? page, int pageSize, out int totalCount)
         {
             var instructors = _instructorRepository.GetPagedList(out totalCount, page, pageSize, null, null, new SortExpression<Instructor>(s => s.FirstName, ListSortDirection.Ascending)).ToList();
@@ -28,6 +31,11 @@ namespace Antra.Training.Contoso.Service
         }
         // TODO ... Get Instructor By Code
         public Instructor GetInstructorByCode(string employeeCode)
+        {
+            throw new NotImplementedException();
+        }
+        // TODO ... Get Courses Group By Instructor
+        public IEnumerable<Instructor> GetAllInstructorIncludeCourses()
         {
             throw new NotImplementedException();
         }
@@ -49,6 +57,7 @@ namespace Antra.Training.Contoso.Service
                 transaction.Complete();
             }
         }
+
     }
 
     public interface IInstructorService
@@ -57,6 +66,7 @@ namespace Antra.Training.Contoso.Service
         Instructor GetInstructorById(int id);
         IEnumerable<Instructor> GetInstructorByName(string name);
         Instructor GetInstructorByCode(string employeeCode);
+        IEnumerable<Instructor> GetAllInstructorIncludeCourses()
         void CreateInstructor(Instructor instructor);
         void UpdateInstructor(Instructor instructor);
     }

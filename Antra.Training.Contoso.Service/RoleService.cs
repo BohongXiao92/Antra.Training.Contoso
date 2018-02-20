@@ -10,8 +10,10 @@ namespace Antra.Training.Contoso.Service
 
     public class RoleService : IRoleService
     {
+        /*************** Constructor ****************/
         private readonly IRoleRepository _roleRepository;
         public RoleService(IRoleRepository roleRepository) => _roleRepository = roleRepository;
+        /*************** Methods ****************/
         public List<Role> GetAllRoles()
         {
             return _roleRepository.GetAll().ToList();
@@ -49,5 +51,10 @@ namespace Antra.Training.Contoso.Service
     public interface IRoleService
     {
         List<Role> GetAllRoles();
+        Role GetRoleById(int roleId);
+        IEnumerable<Role> GetRoleByName(string name);
+        IEnumerable<Role> GetRoleByPersonName(int personId);
+        void CreateRole(Role role);
+        void UpdateRole(Role role);
     }
 }

@@ -7,8 +7,10 @@ namespace Antra.Training.Contoso.Service
 {
     public class PersonService : IPersonService
     {
+        /*************** Constructor ****************/
         private readonly IPersonRepository _personRepository;
         public PersonService(IPersonRepository personRepository) => _personRepository = personRepository;
+        /*************** Methods ****************/
         public Person GetPersonByUserName(string username)
         {
             var person = _personRepository.Get(p => p.Email == username);

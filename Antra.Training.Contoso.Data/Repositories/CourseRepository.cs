@@ -2,12 +2,12 @@
 
 namespace Antra.Training.Contoso.Data.Repositories
 {
-    public class CourseRepository : GenericRepository<Course>, ICoursepository
+    public class CourseRepository : GenericRepository<Course>, ICourseRepository
     {
         public CourseRepository(ContosoDbContext context) : base(context)
         { }
     }
 
-    public interface ICoursepository : IRepository<Course>
+    public interface ICourseRepository : IRepository<Course>
     {}
 }

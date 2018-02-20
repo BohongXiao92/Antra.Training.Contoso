@@ -53,9 +53,6 @@ namespace Test
                 //    Description = "This person is just so so"
                 //};
 
-
-                
-
                 try
                 {
                     //ss.CreateStudent(s);

@@ -10,8 +10,10 @@ namespace Antra.Training.Contoso.Service
 
     public class EnrollmentService : IEnrollmentService
     {
+        /*************** Constructor ****************/
         private readonly IEnrollmentRepository _enrollmentRepository;
         public EnrollmentService(IEnrollmentRepository enrollmentRepository) => _enrollmentRepository = enrollmentRepository;
+        /*************** Methods ****************/
         public List<Enrollment> GetAllEnrollments()
         {
             return _enrollmentRepository.GetAll().ToList();
@@ -47,5 +49,10 @@ namespace Antra.Training.Contoso.Service
     public interface IEnrollmentService
     {
         List<Enrollment> GetAllEnrollments();
+        Enrollment GetEnrollmentById(int roleId);
+        IEnumerable<Enrollment> GetEnrollmentByCourseId(int courseId);
+        IEnumerable<Enrollment> GetEnrollmentByStudentId(int studentId);
+        void CreateEnrollment(Enrollment enroll);
+        void UpdateRole(Enrollment enroll);
     }
 }

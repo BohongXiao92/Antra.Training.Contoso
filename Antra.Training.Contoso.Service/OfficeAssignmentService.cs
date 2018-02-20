@@ -9,8 +9,10 @@ namespace Antra.Training.Contoso.Service
 {
     public class OfficeAssignmentService : IOfficeAssignmentService
     {
+        /*************** Constructor ****************/
         private readonly IOfficeAssignmentsRepository _officeAssignmentRepository;
         public OfficeAssignmentService(IOfficeAssignmentsRepository officeAssignmentRepository) => _officeAssignmentRepository = officeAssignmentRepository;
+        /*************** Methods ****************/
         public List<OfficeAssignment> GetAllOfficeAssignmets()
         {
             return _officeAssignmentRepository.GetAll().ToList();
@@ -46,5 +48,10 @@ namespace Antra.Training.Contoso.Service
     public interface IOfficeAssignmentService
     {
         List<OfficeAssignment> GetAllOfficeAssignmets();
+        OfficeAssignment GetOfficeAssignmentById(int instructorId);
+        IEnumerable<OfficeAssignment> getOfficeAssignmentByLocation(string location);
+        void CreateOfficeAssignmetnt(OfficeAssignment office);
+        void UpdateOfficeAssignment(OfficeAssignment office);
+
     }
 }
