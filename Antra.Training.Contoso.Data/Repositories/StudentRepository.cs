@@ -3,20 +3,20 @@ using System.Linq;
 
 namespace Antra.Training.Contoso.Data.Repositories
 {
-    public class StudentRepository : GenericRepository<Instructor>, IStudentRepository
+    public class StudentRepository : GenericRepository<Student>, IStudentRepository
     {
         public StudentRepository(ContosoDbContext context) : base(context)
         {}
 
-        public Instructor GetStudentByLastName(string lastName)
+        public Student GetStudentByLastName(string lastName)
         {
-            var student = _context.Persons.OfType<Instructor>().FirstOrDefault(s => s.LastName == lastName);
+            var student = _context.Persons.OfType<Student>().FirstOrDefault(s => s.LastName == lastName);
             return student;
         }
     }
 
-    public interface IStudentRepository : IRepository<Instructor>
+    public interface IStudentRepository : IRepository<Student>
     {
-        Instructor GetStudentByLastName(string lastName);
+        Student GetStudentByLastName(string lastName);
     }
 }

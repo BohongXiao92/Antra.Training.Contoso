@@ -18,26 +18,25 @@ namespace Antra.Training.Contoso.Service
             _studentRepository = studentRepository;
             _personRepository = personRepository;
         }
-        public IEnumerable<Instructor> GetAllStudents(int? page, int pageSize, out int totalCount)
+        public IEnumerable<Student> GetAllStudents(int? page, int pageSize, out int totalCount)
         {
-            var students = _studentRepository.GetPagedList(out totalCount, page, pageSize, null, null,
-                new SortExpression<Instructor>(s => s.FirstName, ListSortDirection.Ascending));
+            var students = _studentRepository.GetPagedList(out totalCount, page, pageSize, null, null, new SortExpression<Student>(s => s.FirstName, ListSortDirection.Ascending));
             return students;
         }
-        public Instructor GetStudentById(int id)
+        public Student GetStudentById(int id)
         {
             return _studentRepository.GetById(id);
         }
-        public IEnumerable<Instructor> GetStudentByName(string name)
+        public IEnumerable<Student> GetStudentByName(string name)
         {
             return _studentRepository.GetMany(s => s.LastName.Contains(name) || s.FirstName.Contains(name)).ToList();
         }
         // TODO ...
-        public Instructor GetStudentByCode(string employeeCode)
+        public Student GetStudentByCode(string employeeCode)
         {
             throw new NotImplementedException();
         }
-        public void CreateStudent(Instructor student)
+        public void CreateStudent(Student student)
         {
             using (var transaction = new TransactionScope())
             {
@@ -46,7 +45,7 @@ namespace Antra.Training.Contoso.Service
                 transaction.Complete();
             }
         }
-        public void UpdateStudent(Instructor student)
+        public void UpdateStudent(Student student)
         {
             using (var transaction = new TransactionScope())
             {
@@ -59,11 +58,11 @@ namespace Antra.Training.Contoso.Service
 
     public interface IStudentService
     {
-        IEnumerable<Instructor> GetAllStudents(int? page, int pageSize, out int totalCount);
-        Instructor GetStudentById(int id);
-        IEnumerable<Instructor> GetStudentByName(string name);
-        Instructor GetStudentByCode(string employeeCode);
-        void CreateStudent(Instructor student);
-        void UpdateStudent(Instructor student);
+        IEnumerable<Student> GetAllStudents(int? page, int pageSize, out int totalCount);
+        Student GetStudentById(int id);
+        IEnumerable<Student> GetStudentByName(string name);
+        Student GetStudentByCode(string employeeCode);
+        void CreateStudent(Student student);
+        void UpdateStudent(Student student);
     }
 }

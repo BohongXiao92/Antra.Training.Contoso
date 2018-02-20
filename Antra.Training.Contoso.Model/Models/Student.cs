@@ -6,9 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Antra.Training.Contoso.Model
 {
     [Table("Student")]
-    public class Instructor : Person
+    public class Student : Person
     {
-        public Instructor() => CreatedDate = DateTime.Now;
+        public Student() => CreatedDate = DateTime.Now;
 
         public DateTime? EnrollmentDate { get; set; }
 

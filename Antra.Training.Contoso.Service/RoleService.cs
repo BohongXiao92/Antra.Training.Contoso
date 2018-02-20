@@ -2,6 +2,7 @@
 using Antra.Training.Contoso.Model;
 using System.Collections.Generic;
 using System.Linq;
+using System.Transactions;
 
 namespace Antra.Training.Contoso.Service
 {
@@ -10,14 +11,37 @@ namespace Antra.Training.Contoso.Service
     {
 
         private readonly IRoleRepository _roleRepository;
-
         public RoleService(IRoleRepository roleRepository) => _roleRepository = roleRepository;
-
         public List<Role> GetAllRoles()
         {
             return _roleRepository.GetAll().ToList();
         }
-
+        public Role GetRoleById(int roleId)
+        {
+            return _roleRepository.GetById(roleId);
+        }
+        public IEnumerable<Role> GetInstructorByName(string name)
+        {
+            return _roleRepository.GetMany(r => r.RoleName.Contains(name)).ToList();
+        }
+        public void CreateRole(Role role)
+        {
+            using (var transaction = new TransactionScope())
+            {
+                _roleRepository.Add(role);
+                _roleRepository.SaveChanges();
+                transaction.Complete();
+            }
+        }
+        public void UpdateRole(Role role)
+        {
+            using (var transaction = new TransactionScope())
+            {
+                _roleRepository.Update(role);
+                _roleRepository.SaveChanges();
+                transaction.Complete();
+            }
+        }
     }
 
     public interface IRoleService

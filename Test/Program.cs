@@ -14,31 +14,52 @@ namespace Test
     {
         static void Main(string[] args)
         {
+
             using (var db = new ContosoDbContext())
             {
 
-                Instructor sUpdate = new Instructor()
-                {
-                    Id = 14,
-                    FirstName = "Shangxiang",
-                    LastName = "Sun",
-                    DateofBirth = DateTime.Now,
-                    Email = "Shangxiang@gmail.com",
-                    Password = "ssa21345dfas",
-                    EnrollmentDate = DateTime.Now
-                };
+                //StudentRepository sr = new StudentRepository(db);
+                //PersonRepository pr = new PersonRepository(db);
+                //StudentService ss = new StudentService(pr, sr);
+                //Student s = new Student()
+                //{
+                //    FirstName = "Yufeng",
+                //    LastName = "Luo",
+                //    DateofBirth = DateTime.Now,
+                //    Email = "YufengBeauty@gmail.com",
+                //    Password = "luoyuFeng1932",
+                //    EnrollmentDate = DateTime.Now
+                //};
 
-                StudentRepository sr = new StudentRepository(db);
-                PersonRepository pr = new PersonRepository(db);
-                StudentService ss = new StudentService(pr, sr);
-                //sr.Add(sUpdate);
-                //sr.Update(sUpdate);
-                
+                //InstructorRepository insR = new InstructorRepository(db);
+                //InstructorService insS = new InstructorService(insR);
+                //Instructor ins = new Instructor()
+                //{
+                //    Id = 17,
+                //    FirstName = "Bama",
+                //    LastName = "Ao",
+                //    DateofBirth = DateTime.Now,
+                //    Email = "Bama19343@gmail.com",
+                //    Password = "asdfa12343dfa",
+                //    HireDate = DateTime.Now
+                //};
+
+                RoleRepository rr = new RoleRepository(db);
+                RoleService rs = new RoleService(rr);
+
+                Role role = new Role()
+                {
+                    RoleName = "Good",
+                    Description = "This person is good"
+                };
 
                 try
                 {
-                    //ss.CreateStudent(sUpdate);
-                    ss.UpdateStudent(sUpdate);
+                    //ss.CreateStudent(s);
+                    //ss.UpdateStudent(sUpdate);
+                    //insS.CreateInstructor(ins);
+                    //insS.UpdateInstructor(ins);
+                    rs.CreateRole(role);
                     Console.WriteLine("Yeah!!!!!!!!!!!!!!!!!!!!!");
 
                 }
